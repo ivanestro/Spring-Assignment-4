@@ -36,7 +36,8 @@ Looking through troubleshooting, data is being successfully read to customer_id,
 - Removed: inside of rejected_transaction in rejected_transaction
 
 ```cs
-transaction = rejected_transaction[0]
+for rejected_transaction in rejected_transactions:
+    transaction = rejected_transaction[0]
         customer_id = transaction[0]
         transaction_type = transaction[1]
         if (customer_id == 'A224' and transaction_type == 'with') or \
@@ -44,3 +45,12 @@ transaction = rejected_transaction[0]
 ```
 
 This only works for the specified accounts which is why it wasn't producing an expected error inside bank_data.csv when I added an incorrect format.
+
+## Code Modification 3
+
+Reviewing code, and commenting
+
+- Added: inside README the "for rejected_transaction in rejected_transactions: to make it more sense.
+- Added: Adding comments to the code
+
+[EOF]
