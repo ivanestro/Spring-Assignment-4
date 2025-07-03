@@ -13,9 +13,12 @@ Ivan Estropigan
 LOGGING UPDATES:
 
 - Added: import logging, logging txt to output in LOGS.txt
+
 - Added: error handling, to the data file for errors if file name is not similar to the actual file, if error file cannot be found.
+
 - Added: #validation one to capture all transaction to check invalid transaction
-- Added: #Collect invalid record to store them.
+
+- Added: #Collect invalid record to store the list of valid errors.
 
 - Modified: #validation two with try and except if transaction is less than 0
 - Modified: transaction_type to remove white space and transactional lowercases to capture them in lowercases.

@@ -107,6 +107,7 @@ try:
                     (transaction_amount, transaction_type))
             
             # store all the invalid transaction in a list
+            # for later use
             else:
                 rejected_transactions.append((transaction, validation_errors))
 
