@@ -1,3 +1,5 @@
-2025-07-02 19:36:28,689 - DEBUG - Terminal Logging Cleared
-2025-07-02 19:36:28,689 - DEBUG - Data File Name bank_data.csv | bank_data.csv
-2025-07-02 19:36:28,689 - INFO - Open the file c:\Users\ivane\Documents\rrc-polytech\Software_Development_semester-1\Summer_Term_Class\Assignments\Assignment-4/bank_data.csv
+2025-07-02 20:16:51,005 - DEBUG - Terminal Logging Cleared
+2025-07-02 20:16:51,005 - DEBUG - Data File Name bank_data.csv | bank_data.csv
+2025-07-02 20:16:51,005 - INFO - Open the file c:\Users\ivane\Documents\rrc-polytech\Software_Development_semester-1\Summer_Term_Class\Assignments\Assignment-4/bank_data.csv
+2025-07-02 20:16:51,005 - DEBUG - Transaction read: ['A123', 'deposit', '10000']
+2025-07-02 20:16:51,005 - DEBUG - Transaction read: ['1', 'e', '-300']

@@ -50,7 +50,9 @@ try:
         # Skip heading line
         next(reader)
 
+        # Adding logging.debug to read the id,type, amount
         for transaction in reader:
+            logging.debug(f"Transaction read: {transaction}")
             # Reset valid record and error message for each iteration
             is_valid_record = True
 
@@ -59,7 +61,7 @@ try:
 
             # Gets the customer ID from the first column
             customer_id = transaction[0]
-
+            
             # Gets the transaction type from the second column
             # removes white spaces, and lowers everything
             # so no errors could cause issues.
@@ -141,14 +143,10 @@ try:
     print('=' * len(rejected_report_title))
 
     # Rejected transaction
-    # for rejected transaction, look into specific
-    # customer ID and transaction type, if it matches print
+    # inside the whole list for rejected transaction
+    # check the rejected_transaction if it is 
+    # print("REJECTED: output")
     for rejected_transaction in rejected_transactions:
-        transaction = rejected_transaction[0]
-        customer_id = transaction[0]
-        transaction_type = transaction[1]
-        if (customer_id == 'A224' and transaction_type == 'with') or \
-        (customer_id == 'A123' and transaction_type == 'asdf'):
             print("REJECTED:", rejected_transaction)
 
 # except when data_filename does not match

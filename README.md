@@ -27,3 +27,20 @@ LOGGING UPDATES:
 - Fixed: indentation for Average with the use of try and except ZeroDivisionError
 - Fixed: elif transaction_type 'withdrawal' to 'withdraw' and the subtracting values from "Deposit".
 
+## Code Modification 2
+
+Looking through troubleshooting, data is being successfully read to customer_id, transaction type and amount.
+
+- Added: logging to see if it aligns with customer_id, transaction_type, and amount.
+- Added: bank_data.copy.csv, and added an invalid to check to see if it outputs
+- Removed: inside of rejected_transaction in rejected_transaction
+
+```cs
+transaction = rejected_transaction[0]
+        customer_id = transaction[0]
+        transaction_type = transaction[1]
+        if (customer_id == 'A224' and transaction_type == 'with') or \
+        (customer_id == 'A123' and transaction_type == 'asdf'):
+```
+
+This only works for the specified accounts which is why it wasn't producing an expected error inside bank_data.csv when I added an incorrect format.
